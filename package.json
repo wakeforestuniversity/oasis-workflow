@@ -1,0 +1,50 @@
+{
+	"name": "ow-gutenberg",
+	"scripts": {
+		"dev": "cross-env BABEL_ENV=default webpack --watch",
+		"start": "wp-scripts start",
+		"build": "wp-scripts build",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"packages-update": "wp-scripts packages-update",
+		"postpackages-update": "npm run build",
+		"lint": "eslint src/**"
+	},
+	"main": "src/index.js",
+	"devDependencies": {
+		"@babel/plugin-proposal-object-rest-spread": "^7.18.9",
+		"@babel/plugin-transform-runtime": "^7.24.7",
+		"@babel/preset-env": "^7.24.8",
+		"@babel/preset-react": "^7.24.7",
+		"@wordpress/api-fetch": "^7.4.0",
+		"@wordpress/components": "^28.4.0",
+		"@wordpress/compose": "^7.4.0",
+		"@wordpress/data": "^10.4.0",
+		"@wordpress/date": "^5.4.0",
+		"@wordpress/edit-post": "^8.4.0",
+		"@wordpress/editor": "^14.4.0",
+		"@wordpress/element": "^6.4.0",
+		"@wordpress/eslint-plugin": "^20.1.0",
+		"@wordpress/i18n": "^5.4.0",
+		"@wordpress/icons": "^10.4.0",
+		"@wordpress/plugins": "^7.4.0",
+		"@wordpress/scripts": "^28.4.0",
+		"ajv": "^7.2.4",
+		"cross-env": "^7.0.3",
+		"eslint": "^9.7.0",
+		"mini-css-extract-plugin": "^2.9.0",
+		"prettier": "^3.3.3",
+		"webpack": "^5.93.0",
+		"webpack-cli": "^5.1.4",
+		"webpack-remove-empty-scripts": "^1.0.4"
+	},
+	"version": "1.0.0",
+	"license": "MIT",
+	"dependencies": {
+		"dompurify": "^3.1.6",
+		"react-select": "^5.8.0"
+	},
+	"overrides": {
+		"lighthouse": "^12.1.0",
+		"puppeteer-core": "^22.14.0"
+	}
+}
